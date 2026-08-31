@@ -8,13 +8,14 @@ import os
 import re
 import sys
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 USERNAME = "samiashi"
 PROFILE_REPOSITORY = f"{USERNAME}/{USERNAME}"
-MAX_ITEMS = 10
+MAX_ITEMS = 25
+LOOKBACK_DAYS = 90
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
 ACTIVITY_START = "<!--RECENT_ACTIVITY:start-->"
 ACTIVITY_END = "<!--RECENT_ACTIVITY:end-->"
@@ -39,9 +40,33 @@ def api_json(url: str) -> object:
         return json.load(response)
 
 
+def event_timestamp(event: dict) -> datetime:
+    created_at = event.get("created_at")
+    if not created_at:
+        return datetime.min.replace(tzinfo=timezone.utc)
+    return datetime.fromisoformat(str(created_at).replace("Z", "+00:00"))
+
+
 def fetch_events() -> list[dict]:
-    result = api_json(f"https://api.github.com/users/{USERNAME}/events/public?per_page=100")
-    return result if isinstance(result, list) else []
+    events: list[dict] = []
+    for page in range(1, 4):
+        result = api_json(
+            f"https://api.github.com/users/{USERNAME}/events/public?per_page=100&page={page}"
+        )
+        if not isinstance(result, list):
+            break
+        events.extend(result)
+        if len(result) < 100:
+            break
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)
+    recent_events = [
+        event
+        for event in events
+        if event.get("created_at")
+        and event_timestamp(event) >= cutoff
+    ]
+    return sorted(recent_events, key=event_timestamp, reverse=True)
 
 
 def fetch_original_repositories() -> set[str]:
@@ -59,13 +84,10 @@ def link(label: str, url: str) -> str:
     return f"[{label}]({url})"
 
 
-def event_date(event: dict) -> str:
-    created_at = event.get("created_at")
-    if not created_at:
-        return ""
-    timestamp = datetime.fromisoformat(str(created_at).replace("Z", "+00:00"))
-    local_time = timestamp.astimezone(ZoneInfo("Asia/Dubai"))
-    return f"{local_time.strftime('%b')} {local_time.day}, {local_time.year}"
+def event_datetime(event: dict) -> str:
+    local_time = event_timestamp(event).astimezone(ZoneInfo("Asia/Dubai"))
+    clock = local_time.strftime("%I:%M %p").lstrip("0")
+    return f"{local_time.strftime('%b')} {local_time.day}, {local_time.year} · {clock} Dubai"
 
 
 def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
@@ -151,6 +173,11 @@ def render_event(
         ref = payload.get("ref") or "a new ref"
         return f"🌱 Created {ref_type} `{ref}` in {repository_link}", (event_type, repository, ref_type, ref)
 
+    if event_type == "DeleteEvent" and payload.get("ref_type") in {"branch", "tag"}:
+        ref_type = payload["ref_type"]
+        ref = payload.get("ref") or "a ref"
+        return f"🧹 Deleted {ref_type} `{ref}` in {repository_link}", (event_type, repository, ref_type, ref)
+
     if event_type == "IssueCommentEvent" and payload.get("action") == "created":
         issue = payload.get("issue") or {}
         number = issue.get("number")
@@ -173,6 +200,32 @@ def render_event(
             or f"{repository_url}/pull/{number}"
         )
         return f"💬 Commented on {link(f'PR #{number}: {title}', url)} in {repository_link}", (event_type, url)
+
+    if event_type == "CommitCommentEvent":
+        comment = payload.get("comment") or {}
+        commit_id = str(comment.get("commit_id") or "")
+        short_id = commit_id[:7] or "commit"
+        url = comment.get("html_url") or f"{repository_url}/commit/{commit_id}"
+        return f"💬 Commented on {link(f'commit {short_id}', url)} in {repository_link}", (event_type, url)
+
+    if event_type == "GollumEvent":
+        pages = payload.get("pages") or []
+        if not pages:
+            return None
+        page = pages[0]
+        title = page.get("page_name") or "a wiki page"
+        url = page.get("html_url") or f"{repository_url}/wiki"
+        action = str(page.get("action") or "updated").capitalize()
+        return f"📖 {action} {link(title, url)} in {repository_link}", (event_type, url, action)
+
+    if event_type == "MemberEvent" and payload.get("action") == "added":
+        member = payload.get("member") or {}
+        login = member.get("login") or "a collaborator"
+        url = member.get("html_url") or f"https://github.com/{login}"
+        return f"🤝 Added {link(f'@{login}', url)} to {repository_link}", (event_type, repository, login)
+
+    if event_type == "PublicEvent":
+        return f"🌍 Made {repository_link} public", (event_type, repository)
 
     if event_type == "ForkEvent":
         fork = payload.get("forkee") or {}
@@ -203,9 +256,8 @@ def render_activity(events: list[dict], original_repositories: set[str]) -> list
         if identity in seen:
             continue
         seen.add(identity)
-        date = event_date(event)
-        suffix = f" <sub>· {date}</sub>" if date else ""
-        items.append(f"- {text}{suffix}<br>")
+        timestamp = event_datetime(event)
+        items.append(f"- {text} <sub>· {timestamp}</sub><br>")
         if len(items) == MAX_ITEMS:
             break
     return items
