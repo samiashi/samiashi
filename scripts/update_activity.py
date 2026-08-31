@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 USERNAME = "samiashi"
 PROFILE_REPOSITORY = f"{USERNAME}/{USERNAME}"
-MAX_ITEMS = 6
+MAX_ITEMS = 10
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
 ACTIVITY_START = "<!--RECENT_ACTIVITY:start-->"
 ACTIVITY_END = "<!--RECENT_ACTIVITY:end-->"
@@ -57,6 +57,15 @@ def fetch_original_repositories() -> set[str]:
 
 def link(label: str, url: str) -> str:
     return f"[{label}]({url})"
+
+
+def event_date(event: dict) -> str:
+    created_at = event.get("created_at")
+    if not created_at:
+        return ""
+    timestamp = datetime.fromisoformat(str(created_at).replace("Z", "+00:00"))
+    local_time = timestamp.astimezone(ZoneInfo("Asia/Dubai"))
+    return f"{local_time.strftime('%b')} {local_time.day}, {local_time.year}"
 
 
 def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
@@ -137,6 +146,43 @@ def render_event(
     if event_type == "CreateEvent" and payload.get("ref_type") == "repository":
         return f"📦 Created {repository_link}", (event_type, repository)
 
+    if event_type == "CreateEvent" and payload.get("ref_type") in {"branch", "tag"}:
+        ref_type = payload["ref_type"]
+        ref = payload.get("ref") or "a new ref"
+        return f"🌱 Created {ref_type} `{ref}` in {repository_link}", (event_type, repository, ref_type, ref)
+
+    if event_type == "IssueCommentEvent" and payload.get("action") == "created":
+        issue = payload.get("issue") or {}
+        number = issue.get("number")
+        title = issue.get("title") or "Discussion"
+        url = (
+            (payload.get("comment") or {}).get("html_url")
+            or issue.get("html_url")
+            or f"{repository_url}/issues/{number}"
+        )
+        kind = "PR" if issue.get("pull_request") else "issue"
+        return f"💬 Commented on {link(f'{kind} #{number}: {title}', url)} in {repository_link}", (event_type, url)
+
+    if event_type == "PullRequestReviewCommentEvent" and payload.get("action") == "created":
+        pull_request = pull_request_details(payload, pull_request_cache)
+        number = pull_request.get("number")
+        title = pull_request.get("title") or "Pull request"
+        url = (
+            (payload.get("comment") or {}).get("html_url")
+            or pull_request.get("html_url")
+            or f"{repository_url}/pull/{number}"
+        )
+        return f"💬 Commented on {link(f'PR #{number}: {title}', url)} in {repository_link}", (event_type, url)
+
+    if event_type == "ForkEvent":
+        fork = payload.get("forkee") or {}
+        fork_name = fork.get("full_name") or f"{USERNAME}/{repository.rsplit('/', 1)[-1]}"
+        fork_url = fork.get("html_url") or f"https://github.com/{fork_name}"
+        return f"🍴 Forked {repository_link} to {link(fork_name, fork_url)}", (event_type, repository, fork_name)
+
+    if event_type == "WatchEvent" and payload.get("action") == "started":
+        return f"⭐ Starred {repository_link}", (event_type, repository)
+
     if event_type == "PushEvent":
         if repository not in original_repositories:
             return None
@@ -157,7 +203,9 @@ def render_activity(events: list[dict], original_repositories: set[str]) -> list
         if identity in seen:
             continue
         seen.add(identity)
-        items.append(f"- {text}<br>")
+        date = event_date(event)
+        suffix = f" <sub>· {date}</sub>" if date else ""
+        items.append(f"- {text}{suffix}<br>")
         if len(items) == MAX_ITEMS:
             break
     return items
