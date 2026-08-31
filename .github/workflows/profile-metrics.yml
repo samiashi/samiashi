@@ -1,0 +1,47 @@
+name: Update profile metrics
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-metrics.yml"
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Generate public GitHub activity
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: samiashi
+          filename: github-metrics.svg
+          committer_message: "chore: update profile metrics"
+          config_timezone: Asia/Dubai
+          repositories_skipped: samiashi/samiashi
+
+          base: header, activity, community, repositories
+
+          plugin_activity: yes
+          plugin_activity_limit: 6
+          plugin_activity_days: 30
+          plugin_activity_filter: pr, review, issue, release, public, ref/create
+          plugin_activity_visibility: public
+          plugin_activity_timestamps: yes
+
+          plugin_followup: yes
+          plugin_followup_sections: user
+          plugin_followup_archived: no
