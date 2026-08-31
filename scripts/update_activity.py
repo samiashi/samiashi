@@ -168,16 +168,6 @@ def render_event(
     if event_type == "CreateEvent" and payload.get("ref_type") == "repository":
         return f"📦 Created {repository_link}", (event_type, repository)
 
-    if event_type == "CreateEvent" and payload.get("ref_type") in {"branch", "tag"}:
-        ref_type = payload["ref_type"]
-        ref = payload.get("ref") or "a new ref"
-        return f"🌱 Created {ref_type} `{ref}` in {repository_link}", (event_type, repository, ref_type, ref)
-
-    if event_type == "DeleteEvent" and payload.get("ref_type") in {"branch", "tag"}:
-        ref_type = payload["ref_type"]
-        ref = payload.get("ref") or "a ref"
-        return f"🧹 Deleted {ref_type} `{ref}` in {repository_link}", (event_type, repository, ref_type, ref)
-
     if event_type == "IssueCommentEvent" and payload.get("action") == "created":
         issue = payload.get("issue") or {}
         number = issue.get("number")
