@@ -1,12 +1,6 @@
 name: Update recent activity
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/profile-metrics.yml"
-      - ".github/recent-activity.config.yml"
   schedule:
     - cron: "17 */12 * * *"
   workflow_dispatch:
