@@ -1,4 +1,4 @@
-name: Update profile metrics
+name: Update recent activity
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - ".github/workflows/profile-metrics.yml"
+      - ".github/recent-activity.config.yml"
   schedule:
     - cron: "17 */12 * * *"
   workflow_dispatch:
@@ -14,34 +15,19 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-metrics
+  group: profile-activity
   cancel-in-progress: true
 
 jobs:
-  metrics:
+  activity:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
-      - name: Generate public GitHub activity
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: samiashi
-          filename: github-metrics.svg
-          committer_message: "chore: update profile metrics"
-          config_timezone: Asia/Dubai
-          repositories_skipped: samiashi/samiashi
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
-          base: header, activity, community, repositories
-
-          plugin_activity: yes
-          plugin_activity_limit: 6
-          plugin_activity_days: 30
-          plugin_activity_filter: pr, review, issue, release, public, ref/create
-          plugin_activity_visibility: public
-          plugin_activity_timestamps: yes
-
-          plugin_followup: yes
-          plugin_followup_sections: user
-          plugin_followup_archived: no
+      - name: Update public GitHub activity
+        uses: Readme-Workflows/recent-activity@2750d2b82f226b7327039aa8c3ff96748396ef80
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

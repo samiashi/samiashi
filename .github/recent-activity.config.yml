@@ -1,0 +1,22 @@
+settings:
+  username: "samiashi"
+  commit_msg: "chore: update recent GitHub activity"
+  max_lines: 6
+  readme_file: "./README.md"
+  whitelisted_events:
+    - "create_repo"
+    - "issues_open"
+    - "issues_close"
+    - "pr_open"
+    - "pr_merge"
+    - "review"
+    - "release"
+  date:
+    timezone: "Asia/Dubai"
+    text: "Last updated: {DATE}"
+    format: "mmmm d, yyyy, h:MM TT"
+  commit_name: "github-actions[bot]"
+  commit_email: "41898282+github-actions[bot]@users.noreply.github.com"
+  line_prefix: "- "
+  ignored_repos:
+    - "samiashi/samiashi"

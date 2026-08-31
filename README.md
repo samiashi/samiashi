@@ -14,7 +14,13 @@ I work mostly with Python, Django, TypeScript, distributed systems, and LLM tool
 
 This section updates automatically from my public GitHub activity.
 
-![Sami's recent GitHub activity](./github-metrics.svg)
+<!--RECENT_ACTIVITY:start-->
+<!--RECENT_ACTIVITY:end-->
+
+<sub>
+<!--RECENT_ACTIVITY:last_update-->
+<!--RECENT_ACTIVITY:last_update_end-->
+</sub>
 
 ## Elsewhere
 
