@@ -28,6 +28,6 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Update public GitHub activity
-        uses: Readme-Workflows/recent-activity@2750d2b82f226b7327039aa8c3ff96748396ef80
+        uses: Readme-Workflows/recent-activity@aa0d01a1f4efdb8595986788eccbfdd430c73b8b
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
