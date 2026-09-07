@@ -3,6 +3,8 @@
 Public activity from the past three months, updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7, 2026 · 12:42 PM Dubai</sub><br>
+- 💪 Opened [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 10:59 AM Dubai</sub><br>
 - ⬆️ Pushed updates to [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:39 PM Dubai</sub><br>
 - 💪 Opened [PR #5: Release v0.1.2](https://github.com/samiashi/pytest-fahhh/pull/5) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:38 PM Dubai</sub><br>
 - 🚀 Released [pytest-fahhh v0.1.2](https://github.com/samiashi/pytest-fahhh/releases/tag/v0.1.2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:37 PM Dubai</sub><br>
@@ -26,6 +28,6 @@ Public activity from the past three months, updated automatically.
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 4, 2026, 8:22 PM Dubai time
+Last updated: September 7, 2026, 9:45 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
