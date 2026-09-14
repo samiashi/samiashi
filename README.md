@@ -3,6 +3,7 @@
 Public activity from the past three months, updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [gauthierpiarrette/highball](https://github.com/gauthierpiarrette/highball) <sub>· Sep 14, 2026 · 12:30 PM Dubai</sub><br>
 - ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) <sub>· Sep 8, 2026 · 3:08 PM Dubai</sub><br>
 - ⭐ Starred [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7, 2026 · 12:42 PM Dubai</sub><br>
 - 💪 Opened [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 10:59 AM Dubai</sub><br>
@@ -13,7 +14,7 @@ Public activity from the past three months, updated automatically.
 - ⭐ Starred [angelol/skills](https://github.com/angelol/skills) <sub>· Sep 3, 2026 · 12:11 PM Dubai</sub><br>
 - 🔎 Approved [PR #6: chore(main): release 0.6.0](https://github.com/samiashi/chrono24-mcp/pull/6) in [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Sep 1, 2026 · 10:42 PM Dubai</sub><br>
 - ⭐ Starred [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) <sub>· Sep 1, 2026 · 3:42 PM Dubai</sub><br>
-- ⭐ Starred [crmne/fastpotify](https://github.com/crmne/fastpotify) <sub>· Sep 1, 2026 · 3:26 PM Dubai</sub><br>
+- ⭐ Starred [crmne/spotifast](https://github.com/crmne/spotifast) <sub>· Sep 1, 2026 · 3:26 PM Dubai</sub><br>
 - ⬆️ Pushed updates to [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Sep 1, 2026 · 2:04 PM Dubai</sub><br>
 - 🔎 Approved [PR #5: chore(main): release 0.5.0](https://github.com/samiashi/chrono24-mcp/pull/5) in [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Sep 1, 2026 · 1:17 PM Dubai</sub><br>
 - ⭐ Starred [omacom/omarchy](https://github.com/omacom/omarchy) <sub>· Sep 1, 2026 · 10:59 AM Dubai</sub><br>
@@ -29,6 +30,6 @@ Public activity from the past three months, updated automatically.
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 8, 2026, 8:38 PM Dubai time
+Last updated: September 14, 2026, 10:04 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
