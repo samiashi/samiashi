@@ -3,6 +3,9 @@
 Public activity from the past three months, updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⬆️ Pushed updates to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Sep 21, 2026 · 8:26 PM Dubai</sub><br>
+- 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
+- ⭐ Starred [google/ax](https://github.com/google/ax) <sub>· Sep 21, 2026 · 10:35 AM Dubai</sub><br>
 - ⭐ Starred [raine/workmux](https://github.com/raine/workmux) <sub>· Sep 18, 2026 · 4:10 PM Dubai</sub><br>
 - ⭐ Starred [coder/coder](https://github.com/coder/coder) <sub>· Sep 17, 2026 · 4:59 PM Dubai</sub><br>
 - ⭐ Starred [supabase/supabase](https://github.com/supabase/supabase) <sub>· Sep 17, 2026 · 4:57 PM Dubai</sub><br>
@@ -11,10 +14,10 @@ Public activity from the past three months, updated automatically.
 - ⭐ Starred [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) <sub>· Sep 17, 2026 · 2:52 PM Dubai</sub><br>
 - ⬆️ Pushed updates to [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Sep 17, 2026 · 2:06 PM Dubai</sub><br>
 - ⭐ Starred [gauthierpiarrette/highball](https://github.com/gauthierpiarrette/highball) <sub>· Sep 14, 2026 · 12:30 PM Dubai</sub><br>
+- 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 - ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) <sub>· Sep 8, 2026 · 3:08 PM Dubai</sub><br>
 - ⭐ Starred [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7, 2026 · 12:42 PM Dubai</sub><br>
 - 💪 Opened [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 10:59 AM Dubai</sub><br>
-- ⬆️ Pushed updates to [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:39 PM Dubai</sub><br>
 - 💪 Opened [PR #5: Release v0.1.2](https://github.com/samiashi/pytest-fahhh/pull/5) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:38 PM Dubai</sub><br>
 - 🚀 Released [pytest-fahhh v0.1.2](https://github.com/samiashi/pytest-fahhh/releases/tag/v0.1.2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:37 PM Dubai</sub><br>
 - ⭐ Starred [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) <sub>· Sep 3, 2026 · 3:07 PM Dubai</sub><br>
@@ -25,13 +28,10 @@ Public activity from the past three months, updated automatically.
 - ⭐ Starred [omacom/omarchy](https://github.com/omacom/omarchy) <sub>· Sep 1, 2026 · 10:59 AM Dubai</sub><br>
 - ⭐ Starred [qisutu/qisutu](https://github.com/qisutu/qisutu) <sub>· Aug 27, 2026 · 1:03 PM Dubai</sub><br>
 - ⭐ Starred [SenteLabsAI/OpenExecutive](https://github.com/SenteLabsAI/OpenExecutive) <sub>· Aug 27, 2026 · 12:54 PM Dubai</sub><br>
-- 💬 Commented on [PR #1: chore(main): release 1.0.0](https://github.com/samiashi/chrono24-mcp/pull/1#issuecomment-5410010290) in [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Aug 25, 2026 · 3:55 PM Dubai</sub><br>
-- 💪 Opened [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
-- 💪 Opened [PR #3186: feat: add AED to the preferred currency picker](https://github.com/steipete/CodexBar/pull/3186) in [steipete/CodexBar](https://github.com/steipete/CodexBar) <sub>· Aug 25, 2026 · 10:58 AM Dubai</sub><br>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 19, 2026, 7:53 PM Dubai time
+Last updated: September 21, 2026, 10:12 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
