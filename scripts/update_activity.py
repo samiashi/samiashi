@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -16,6 +17,13 @@ USERNAME = "samiashi"
 PROFILE_REPOSITORY = f"{USERNAME}/{USERNAME}"
 MAX_ITEMS = 25
 LOOKBACK_DAYS = 90
+STAR_LINK_LIMIT = 3
+STAR_KIND = "WatchEvent"
+COMMENT_KIND = "comment"
+REVIEW_KIND = "review"
+IGNORED_REPOSITORIES: frozenset[str] = frozenset()
+IGNORED_OWNERS: frozenset[str] = frozenset()
+DUBAI = ZoneInfo("Asia/Dubai")
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
 ACTIVITY_START = "<!--RECENT_ACTIVITY:start-->"
 ACTIVITY_END = "<!--RECENT_ACTIVITY:end-->"
@@ -84,10 +92,42 @@ def link(label: str, url: str) -> str:
     return f"[{label}]({url})"
 
 
+def event_moment(event: dict) -> datetime:
+    return event_timestamp(event).astimezone(DUBAI)
+
+
 def event_datetime(event: dict) -> str:
-    local_time = event_timestamp(event).astimezone(ZoneInfo("Asia/Dubai"))
+    local_time = event_moment(event)
     clock = local_time.strftime("%I:%M %p").lstrip("0")
     return f"{local_time.strftime('%b')} {local_time.day}, {local_time.year} · {clock} Dubai"
+
+
+def moment_range(moments: list[datetime]) -> str:
+    newest, oldest = moments[0], moments[-1]
+    if newest.date() == oldest.date():
+        return f"{oldest.strftime('%b')} {oldest.day}, {oldest.year} Dubai"
+    if newest.year == oldest.year and newest.month == oldest.month:
+        return f"{oldest.strftime('%b')} {oldest.day}–{newest.day}, {newest.year} Dubai"
+    if newest.year == oldest.year:
+        return (
+            f"{oldest.strftime('%b')} {oldest.day} – "
+            f"{newest.strftime('%b')} {newest.day}, {newest.year} Dubai"
+        )
+    return (
+        f"{oldest.strftime('%b')} {oldest.day}, {oldest.year} – "
+        f"{newest.strftime('%b')} {newest.day}, {newest.year} Dubai"
+    )
+
+
+def optional_api_json(url: str) -> object | None:
+    try:
+        return api_json(url)
+    except urllib.error.HTTPError as error:
+        if error.code in {403, 429}:
+            raise
+        return None
+    except (OSError, ValueError):
+        return None
 
 
 def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
@@ -96,23 +136,44 @@ def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
     if not api_url:
         return summary
     if api_url not in cache:
-        try:
-            result = api_json(api_url)
-            cache[api_url] = result if isinstance(result, dict) else {}
-        except (OSError, ValueError):
-            cache[api_url] = {}
+        result = optional_api_json(api_url)
+        cache[api_url] = result if isinstance(result, dict) else {}
     return {**summary, **cache[api_url]}
+
+
+def push_commit_count(payload: dict, repository: str, cache: dict[str, int]) -> int:
+    count = payload.get("size") or payload.get("distinct_size")
+    if count:
+        return int(count)
+    commits = payload.get("commits") or []
+    if commits:
+        return len(commits)
+    before = str(payload.get("before") or "")
+    head = str(payload.get("head") or "")
+    if not before or not head or before == head or set(before) == {"0"}:
+        return 0
+    key = f"{repository}@{before}...{head}"
+    if key not in cache:
+        result = optional_api_json(
+            f"https://api.github.com/repos/{repository}/compare/{before}...{head}"
+        )
+        total = result.get("total_commits") if isinstance(result, dict) else 0
+        cache[key] = int(total or 0)
+    return cache[key]
 
 
 def render_event(
     event: dict,
     original_repositories: set[str],
     pull_request_cache: dict[str, dict],
+    commit_count_cache: dict[str, int],
 ) -> tuple[str, tuple] | None:
     event_type = event.get("type")
     payload = event.get("payload") or {}
     repository = (event.get("repo") or {}).get("name")
     if not repository or repository == PROFILE_REPOSITORY:
+        return None
+    if repository in IGNORED_REPOSITORIES or repository.split("/", 1)[0] in IGNORED_OWNERS:
         return None
 
     repository_url = f"https://github.com/{repository}"
@@ -145,7 +206,7 @@ def render_event(
         }.get(state, "Reviewed")
         return (
             f"🔎 {verb} {link(f'PR #{number}: {title}', url)} in {repository_link}",
-            (event_type, url, state),
+            (REVIEW_KIND, repository, number, state),
         )
 
     if event_type == "IssuesEvent":
@@ -178,7 +239,7 @@ def render_event(
             or f"{repository_url}/issues/{number}"
         )
         kind = "PR" if issue.get("pull_request") else "issue"
-        identity = ("comment", repository, number) if number is not None else (event_type, url)
+        identity = (COMMENT_KIND, repository, number) if number is not None else (event_type, url)
         return f"💬 Commented on {link(f'{kind} #{number}: {title}', url)} in {repository_link}", identity
 
     if event_type == "PullRequestReviewCommentEvent" and payload.get("action") == "created":
@@ -190,7 +251,7 @@ def render_event(
             or pull_request.get("html_url")
             or f"{repository_url}/pull/{number}"
         )
-        identity = ("comment", repository, number) if number is not None else (event_type, url)
+        identity = (COMMENT_KIND, repository, number) if number is not None else (event_type, url)
         return f"💬 Commented on {link(f'PR #{number}: {title}', url)} in {repository_link}", identity
 
     if event_type == "CommitCommentEvent":
@@ -226,33 +287,79 @@ def render_event(
         return f"🍴 Forked {repository_link} to {link(fork_name, fork_url)}", (event_type, repository, fork_name)
 
     if event_type == "WatchEvent" and payload.get("action") == "started":
-        return f"⭐ Starred {repository_link}", (event_type, repository)
+        return f"⭐ Starred {repository_link}", (STAR_KIND, repository)
 
     if event_type == "PushEvent":
         if repository not in original_repositories:
             return None
-        return f"⬆️ Pushed updates to {repository_link}", (event_type, repository)
+        commits = push_commit_count(payload, repository, commit_count_cache)
+        if commits > 1:
+            text = f"⬆️ Pushed {commits} commits to {repository_link}"
+        elif commits == 1:
+            text = f"⬆️ Pushed 1 commit to {repository_link}"
+        else:
+            text = f"⬆️ Pushed updates to {repository_link}"
+        return text, (event_type, repository)
 
     return None
 
 
 def render_activity(events: list[dict], original_repositories: set[str]) -> list[str]:
-    items: list[str] = []
+    rendered: list[tuple[dict, str, tuple]] = []
     seen: set[tuple] = set()
     pull_request_cache: dict[str, dict] = {}
+    commit_count_cache: dict[str, int] = {}
     for event in events:
-        rendered = render_event(event, original_repositories, pull_request_cache)
-        if not rendered:
+        result = render_event(
+            event, original_repositories, pull_request_cache, commit_count_cache
+        )
+        if not result:
             continue
-        text, identity = rendered
+        text, identity = result
         if identity in seen:
             continue
         seen.add(identity)
-        timestamp = event_datetime(event)
-        items.append(f"- {text} <sub>· {timestamp}</sub><br>")
-        if len(items) == MAX_ITEMS:
-            break
-    return items
+        rendered.append((event, text, identity))
+
+    reviewed = {identity[1:3] for _, _, identity in rendered if identity[0] == REVIEW_KIND}
+    rendered = [
+        (event, text, identity)
+        for event, text, identity in rendered
+        if identity[0] != COMMENT_KIND or identity[1:3] not in reviewed
+    ]
+
+    lines: list[str] = []
+    star_run: list[tuple[dict, str, tuple]] = []
+
+    def flush_stars() -> None:
+        if not star_run:
+            return
+        if len(star_run) == 1:
+            event, text, _ = star_run[0]
+            lines.append(f"- {text} <sub>· {event_datetime(event)}</sub><br>")
+            star_run.clear()
+            return
+        repositories = [identity[1] for _, _, identity in star_run]
+        labels = ", ".join(
+            link(repository, f"https://github.com/{repository}")
+            for repository in repositories[:STAR_LINK_LIMIT]
+        )
+        hidden = len(repositories) - STAR_LINK_LIMIT
+        if hidden > 0:
+            labels += f" and {hidden} more"
+        timestamp = moment_range([event_moment(event) for event, _, _ in star_run])
+        lines.append(f"- ⭐ Starred {labels} <sub>· {timestamp}</sub><br>")
+        star_run.clear()
+
+    for event, text, identity in rendered:
+        if identity[0] == STAR_KIND:
+            star_run.append((event, text, identity))
+            continue
+        flush_stars()
+        lines.append(f"- {text} <sub>· {event_datetime(event)}</sub><br>")
+    flush_stars()
+
+    return lines[:MAX_ITEMS]
 
 
 def replace_section(document: str, start: str, end: str, content: str) -> str:
@@ -285,7 +392,7 @@ def main() -> int:
         print("Recent activity is unchanged.")
         return 0
 
-    now = datetime.now(ZoneInfo("Asia/Dubai"))
+    now = datetime.now(DUBAI)
     timestamp = f"Last updated: {now.strftime('%B')} {now.day}, {now.year}, {now.strftime('%I:%M %p').lstrip('0')} Dubai time"
     document = replace_section(document, ACTIVITY_START, ACTIVITY_END, activity)
     document = replace_section(document, UPDATED_START, UPDATED_END, timestamp)
