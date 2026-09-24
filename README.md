@@ -3,6 +3,10 @@
 Public activity from the past three months, updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- 💪 Opened [PR #986: Display Git worktrees under their repository in the Git view](https://github.com/alefragnani/vscode-project-manager/pull/986) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 3:22 PM Dubai</sub><br>
+- 💪 Opened [PR #985: Fix invalid JSON in Ukrainian localization file (package.nls.uk.json)](https://github.com/alefragnani/vscode-project-manager/pull/985) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 3:21 PM Dubai</sub><br>
+- 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Sep 24, 2026 · 2:34 PM Dubai</sub><br>
 - 🔎 Reviewed [PR #51: [COR-1422] Add per-request usage telemetry to a Redis stream](https://github.com/coral-li/llmproxy/pull/51) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Sep 23, 2026 · 6:07 PM Dubai</sub><br>
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
 - 💪 Opened [PR #1570: [azure][s3] Replace deprecated `datetime.utcnow()`](https://github.com/jschneier/django-storages/pull/1570) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 · 4:14 PM Dubai</sub><br>
@@ -23,12 +27,10 @@ Public activity from the past three months, updated automatically.
 - ⭐ Starred [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), [angelol/skills](https://github.com/angelol/skills), [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) and 4 more <sub>· Aug 27 – Sep 3, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #1: chore(main): release 1.0.0](https://github.com/samiashi/chrono24-mcp/pull/1#issuecomment-5410010290) in [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Aug 25, 2026 · 3:55 PM Dubai</sub><br>
 - 💪 Opened [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
-- 💪 Opened [PR #3186: feat: add AED to the preferred currency picker](https://github.com/steipete/CodexBar/pull/3186) in [steipete/CodexBar](https://github.com/steipete/CodexBar) <sub>· Aug 25, 2026 · 10:58 AM Dubai</sub><br>
-- 🍴 Forked [steipete/CodexBar](https://github.com/steipete/CodexBar) to [samiashi/CodexBar](https://github.com/samiashi/CodexBar) <sub>· Aug 25, 2026 · 10:29 AM Dubai</sub><br>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 24, 2026, 10:54 AM Dubai time
+Last updated: September 24, 2026, 9:12 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
