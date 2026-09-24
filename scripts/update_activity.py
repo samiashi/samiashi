@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Update the profile README from GitHub's public user-events feed."""
+"""Update the profile README with public pull requests and recent activity."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -16,7 +17,9 @@ from zoneinfo import ZoneInfo
 USERNAME = "samiashi"
 PROFILE_REPOSITORY = f"{USERNAME}/{USERNAME}"
 MAX_ITEMS = 25
+MAX_PULL_REQUESTS = 100
 LOOKBACK_DAYS = 90
+SEARCH_PAGE_LIMIT = 10
 STAR_LINK_LIMIT = 3
 STAR_KIND = "WatchEvent"
 COMMENT_KIND = "comment"
@@ -25,6 +28,10 @@ IGNORED_REPOSITORIES: frozenset[str] = frozenset()
 IGNORED_OWNERS: frozenset[str] = frozenset()
 DUBAI = ZoneInfo("Asia/Dubai")
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
+PULL_REQUEST_SEARCH_URL = "https://api.github.com/search/issues"
+PULL_REQUEST_BROWSE_URL = f"https://github.com/search?q=author%3A{USERNAME}&type=pullrequests"
+PULL_REQUEST_START = "<!--OPEN_SOURCE_PRS:start-->"
+PULL_REQUEST_END = "<!--OPEN_SOURCE_PRS:end-->"
 ACTIVITY_START = "<!--RECENT_ACTIVITY:start-->"
 ACTIVITY_END = "<!--RECENT_ACTIVITY:end-->"
 UPDATED_START = "<!--RECENT_ACTIVITY:last_update-->"
@@ -48,11 +55,15 @@ def api_json(url: str) -> object:
         return json.load(response)
 
 
+def parse_timestamp(value: str) -> datetime:
+    return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+
+
 def event_timestamp(event: dict) -> datetime:
     created_at = event.get("created_at")
     if not created_at:
         return datetime.min.replace(tzinfo=timezone.utc)
-    return datetime.fromisoformat(str(created_at).replace("Z", "+00:00"))
+    return parse_timestamp(created_at)
 
 
 def fetch_events() -> list[dict]:
@@ -88,6 +99,35 @@ def fetch_original_repositories() -> set[str]:
     }
 
 
+def fetch_pull_requests() -> list[dict]:
+    items: list[dict] = []
+    for page in range(1, SEARCH_PAGE_LIMIT + 1):
+        query = urllib.parse.urlencode(
+            {
+                "q": f"author:{USERNAME} is:pr is:public",
+                "sort": "created",
+                "order": "desc",
+                "per_page": 100,
+                "page": page,
+            }
+        )
+        result = api_json(f"{PULL_REQUEST_SEARCH_URL}?{query}")
+        page_items = result.get("items") if isinstance(result, dict) else None
+        if not page_items:
+            break
+        items.extend(page_items)
+        if len(page_items) < 100:
+            break
+    return items
+
+
+def pull_request_repository(item: dict) -> str:
+    repository = item.get("repository") or {}
+    if repository.get("full_name"):
+        return str(repository["full_name"])
+    return str(item.get("repository_url") or "").rsplit("/repos/", 1)[-1]
+
+
 def link(label: str, url: str) -> str:
     return f"[{label}]({url})"
 
@@ -96,10 +136,14 @@ def event_moment(event: dict) -> datetime:
     return event_timestamp(event).astimezone(DUBAI)
 
 
-def event_datetime(event: dict) -> str:
-    local_time = event_moment(event)
+def moment_datetime(moment: datetime) -> str:
+    local_time = moment.astimezone(DUBAI)
     clock = local_time.strftime("%I:%M %p").lstrip("0")
     return f"{local_time.strftime('%b')} {local_time.day}, {local_time.year} · {clock} Dubai"
+
+
+def event_datetime(event: dict) -> str:
+    return moment_datetime(event_timestamp(event))
 
 
 def moment_range(moments: list[datetime]) -> str:
@@ -130,6 +174,15 @@ def optional_api_json(url: str) -> object | None:
         return None
 
 
+def fetch_public_repositories(repositories: set[str]) -> set[str]:
+    public: set[str] = set()
+    for repository in sorted(repositories):
+        details = optional_api_json(f"https://api.github.com/repos/{repository}")
+        if isinstance(details, dict) and details.get("visibility") == "public":
+            public.add(repository)
+    return public
+
+
 def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
     summary = payload.get("pull_request") or {}
     api_url = summary.get("url") or (payload.get("review") or {}).get("pull_request_url")
@@ -139,6 +192,35 @@ def pull_request_details(payload: dict, cache: dict[str, dict]) -> dict:
         result = optional_api_json(api_url)
         cache[api_url] = result if isinstance(result, dict) else {}
     return {**summary, **cache[api_url]}
+
+
+def pull_requests_from_events(events: list[dict]) -> list[dict]:
+    cache: dict[str, dict] = {}
+    items: list[dict] = []
+    seen: set[str] = set()
+    for event in events:
+        if event.get("type") != "PullRequestEvent":
+            continue
+        payload = event.get("payload") or {}
+        if payload.get("action") not in {"opened", "reopened", "closed"}:
+            continue
+        pull_request = pull_request_details(payload, cache)
+        url = pull_request.get("html_url")
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        items.append(
+            {
+                "html_url": url,
+                "title": pull_request.get("title") or "Pull request",
+                "number": pull_request.get("number") or payload.get("number"),
+                "state": pull_request.get("state") or "open",
+                "created_at": pull_request.get("created_at") or event.get("created_at"),
+                "repository": {"full_name": (event.get("repo") or {}).get("name") or ""},
+                "pull_request": {"merged_at": pull_request.get("merged_at")},
+            }
+        )
+    return items
 
 
 def push_commit_count(payload: dict, repository: str, cache: dict[str, int]) -> int:
@@ -178,19 +260,6 @@ def render_event(
 
     repository_url = f"https://github.com/{repository}"
     repository_link = link(repository, repository_url)
-
-    if event_type == "PullRequestEvent":
-        pull_request = pull_request_details(payload, pull_request_cache)
-        number = pull_request.get("number") or payload.get("number")
-        title = pull_request.get("title") or "Pull request"
-        url = pull_request.get("html_url") or f"{repository_url}/pull/{number}"
-        pull_request_link = link(f"PR #{number}: {title}", url)
-        action = payload.get("action")
-        if action == "closed" and pull_request.get("merged"):
-            return f"🎉 Merged {pull_request_link} in {repository_link}", (event_type, url, "merged")
-        if action in {"opened", "reopened"}:
-            return f"💪 Opened {pull_request_link} in {repository_link}", (event_type, url, "opened")
-        return None
 
     if event_type == "PullRequestReviewEvent":
         pull_request = pull_request_details(payload, pull_request_cache)
@@ -304,6 +373,78 @@ def render_event(
     return None
 
 
+def render_pull_request(item: dict) -> tuple[str, datetime, str] | None:
+    summary = item.get("pull_request") or {}
+    if summary.get("merged_at"):
+        status = "merged"
+        moment = parse_timestamp(summary["merged_at"])
+    elif item.get("state") == "open" and item.get("created_at"):
+        status = "open"
+        moment = parse_timestamp(item["created_at"])
+    else:
+        return None
+
+    repository = pull_request_repository(item)
+    number = item.get("number")
+    title = item.get("title") or "Pull request"
+    url = item.get("html_url") or f"https://github.com/{repository}/pull/{number}"
+    emoji = "🎉" if status == "merged" else "💪"
+    line = (
+        f"- {emoji} {link(f'PR #{number}: {title}', url)} "
+        f"in {link(repository, f'https://github.com/{repository}')} "
+        f"<sub>· {moment_datetime(moment)}</sub><br>"
+    )
+    return status, moment, line
+
+
+def render_pull_requests(items: list[dict], public_repositories: set[str]) -> list[str]:
+    opened: list[tuple[datetime, str]] = []
+    merged: list[tuple[datetime, str]] = []
+    seen: set[str] = set()
+    for item in items:
+        repository = pull_request_repository(item)
+        if not repository or repository == PROFILE_REPOSITORY:
+            continue
+        if repository in IGNORED_REPOSITORIES or repository.split("/", 1)[0] in IGNORED_OWNERS:
+            continue
+        if repository not in public_repositories:
+            continue
+        url = str(item.get("html_url") or "")
+        if url:
+            if url in seen:
+                continue
+            seen.add(url)
+        rendered = render_pull_request(item)
+        if not rendered:
+            continue
+        status, moment, line = rendered
+        (opened if status == "open" else merged).append((moment, line))
+
+    opened.sort(key=lambda entry: entry[0], reverse=True)
+    merged.sort(key=lambda entry: entry[0], reverse=True)
+
+    visible_merged = merged[: max(MAX_PULL_REQUESTS - len(opened), 0)]
+    hidden = len(merged) - len(visible_merged)
+
+    lines: list[str] = []
+    if opened:
+        lines.append(f"**Open ({len(opened)})**")
+        lines.append("")
+        lines.extend(line for _, line in opened)
+    if merged:
+        if lines:
+            lines.append("")
+        lines.append(f"**Merged ({len(merged)})**")
+        lines.append("")
+        lines.extend(line for _, line in visible_merged)
+        if hidden:
+            plural = "s" if hidden != 1 else ""
+            lines.append(
+                f"- [{hidden} more pull request{plural} on GitHub]({PULL_REQUEST_BROWSE_URL})<br>"
+            )
+    return lines
+
+
 def render_activity(events: list[dict], original_repositories: set[str]) -> list[str]:
     rendered: list[tuple[dict, str, tuple]] = []
     seen: set[tuple] = set()
@@ -370,34 +511,62 @@ def replace_section(document: str, start: str, end: str, content: str) -> str:
     return updated
 
 
-def main() -> int:
-    items = render_activity(fetch_events(), fetch_original_repositories())
-    if not items:
-        items = ["- No recent public activity found.<br>"]
+def section_content(document: str, start: str, end: str) -> str:
+    match = re.search(
+        rf"{re.escape(start)}\n(.*?)\n{re.escape(end)}", document, flags=re.DOTALL
+    )
+    if not match:
+        raise RuntimeError(f"README marker pair is missing: {start} / {end}")
+    return match.group(1)
 
-    activity = "\n".join(items)
+
+def main() -> int:
+    events = fetch_events()
+
+    pull_requests = fetch_pull_requests()
+    if not pull_requests:
+        pull_requests = pull_requests_from_events(events)
+    public_repositories = fetch_public_repositories(
+        {pull_request_repository(item) for item in pull_requests} - {""}
+    )
+    pull_request_lines = render_pull_requests(pull_requests, public_repositories)
+    if not pull_request_lines:
+        pull_request_lines = ["- No public pull requests found.<br>"]
+
+    activity_lines = render_activity(events, fetch_original_repositories())
+    if not activity_lines:
+        activity_lines = ["- No recent public activity found.<br>"]
+
+    pull_requests_section = "\n".join(pull_request_lines)
+    activity_section = "\n".join(activity_lines)
+
     if "--dry-run" in sys.argv:
-        print(activity)
+        print(pull_requests_section)
+        print()
+        print(activity_section)
         return 0
 
     document = README_PATH.read_text(encoding="utf-8")
-    current_match = re.search(
-        rf"{re.escape(ACTIVITY_START)}\n(.*?)\n{re.escape(ACTIVITY_END)}",
-        document,
-        flags=re.DOTALL,
-    )
-    if not current_match:
-        raise RuntimeError("README activity markers are missing")
-    if current_match.group(1) == activity:
-        print("Recent activity is unchanged.")
+    if (
+        section_content(document, PULL_REQUEST_START, PULL_REQUEST_END) == pull_requests_section
+        and section_content(document, ACTIVITY_START, ACTIVITY_END) == activity_section
+    ):
+        print("Profile activity is unchanged.")
         return 0
 
     now = datetime.now(DUBAI)
     timestamp = f"Last updated: {now.strftime('%B')} {now.day}, {now.year}, {now.strftime('%I:%M %p').lstrip('0')} Dubai time"
-    document = replace_section(document, ACTIVITY_START, ACTIVITY_END, activity)
+    document = replace_section(document, PULL_REQUEST_START, PULL_REQUEST_END, pull_requests_section)
+    document = replace_section(document, ACTIVITY_START, ACTIVITY_END, activity_section)
     document = replace_section(document, UPDATED_START, UPDATED_END, timestamp)
     README_PATH.write_text(document, encoding="utf-8")
-    print(f"Updated README with {len(items)} public activity items.")
+    pull_request_count = sum(
+        1 for line in pull_request_lines if line.startswith(("- 💪", "- 🎉"))
+    )
+    print(
+        f"Updated README with {pull_request_count} public pull requests "
+        f"and {len(activity_lines)} public activity items."
+    )
     return 0
 
 
