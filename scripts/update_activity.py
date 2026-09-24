@@ -178,7 +178,8 @@ def render_event(
             or f"{repository_url}/issues/{number}"
         )
         kind = "PR" if issue.get("pull_request") else "issue"
-        return f"💬 Commented on {link(f'{kind} #{number}: {title}', url)} in {repository_link}", (event_type, url)
+        identity = ("comment", repository, number) if number is not None else (event_type, url)
+        return f"💬 Commented on {link(f'{kind} #{number}: {title}', url)} in {repository_link}", identity
 
     if event_type == "PullRequestReviewCommentEvent" and payload.get("action") == "created":
         pull_request = pull_request_details(payload, pull_request_cache)
@@ -189,7 +190,8 @@ def render_event(
             or pull_request.get("html_url")
             or f"{repository_url}/pull/{number}"
         )
-        return f"💬 Commented on {link(f'PR #{number}: {title}', url)} in {repository_link}", (event_type, url)
+        identity = ("comment", repository, number) if number is not None else (event_type, url)
+        return f"💬 Commented on {link(f'PR #{number}: {title}', url)} in {repository_link}", identity
 
     if event_type == "CommitCommentEvent":
         comment = payload.get("comment") or {}
