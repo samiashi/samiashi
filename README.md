@@ -60,9 +60,7 @@ Public activity from the past three months, excluding pull requests (listed abov
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Sep 21, 2026 · 8:26 PM Dubai</sub><br>
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
-- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 4 more <sub>· Sep 17–21, 2026 Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/chrono24-mcp](https://github.com/samiashi/chrono24-mcp) <sub>· Sep 17, 2026 · 2:06 PM Dubai</sub><br>
-- ⭐ Starred [gauthierpiarrette/highball](https://github.com/gauthierpiarrette/highball) <sub>· Sep 14, 2026 · 12:30 PM Dubai</sub><br>
+- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 5 more <sub>· Sep 14–21, 2026 Dubai</sub><br>
 - 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 - ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents), [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7–8, 2026 Dubai</sub><br>
 - 🚀 Released [pytest-fahhh v0.1.2](https://github.com/samiashi/pytest-fahhh/releases/tag/v0.1.2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:37 PM Dubai</sub><br>
@@ -71,6 +69,6 @@ Public activity from the past three months, excluding pull requests (listed abov
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 25, 2026, 8:59 AM Dubai time
+Last updated: September 25, 2026, 9:12 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
