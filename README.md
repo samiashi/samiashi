@@ -57,15 +57,15 @@ Public pull requests I've opened or merged. Updated automatically.
 Public issues I've opened. Updated automatically.
 
 <!--OPEN_SOURCE_ISSUES:start-->
-**Open (4)**
+**Open (3)**
 
-- 💪 [issue #24858: Vue tracing mixin schedules a 2-second timer per component, even with `trackComponents: false`](https://github.com/getsentry/sentry-javascript/issues/24858) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 10:44 AM Dubai</sub><br>
 - 💪 [issue #319: Pymakr triggers runaway rg searches (100% CPU) on large Python workspace](https://github.com/pycom/pymakr-vsc/issues/319) in [pycom/pymakr-vsc](https://github.com/pycom/pymakr-vsc) <sub>· Feb 5, 2026 · 11:57 AM Dubai</sub><br>
 - 💪 [issue #219: BUG: Bubble chart data labels not rendering in SVG export with download_chart()](https://github.com/highcharts-for-python/highcharts-core/issues/219) in [highcharts-for-python/highcharts-core](https://github.com/highcharts-for-python/highcharts-core) <sub>· Jun 18, 2025 · 5:24 PM Dubai</sub><br>
 - 💪 [issue #53: Unable to extract currency from excel formatted cells](https://github.com/microsoft/markitdown/issues/53) in [microsoft/markitdown](https://github.com/microsoft/markitdown) <sub>· Dec 16, 2024 · 12:08 PM Dubai</sub><br>
 
-**Completed (15)**
+**Completed (16)**
 
+- ✅ [issue #24858: Vue tracing mixin schedules a 2-second timer per component, even with `trackComponents: false`](https://github.com/getsentry/sentry-javascript/issues/24858) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 2:09 PM Dubai</sub><br>
 - ✅ [issue #34957: Nuxt 4.4.4 dev server fails for ssr:false app: Vite Node IPC socket path not configured](https://github.com/nuxt/nuxt/issues/34957) in [nuxt/nuxt](https://github.com/nuxt/nuxt) <sub>· Jun 14, 2026 · 5:56 AM Dubai</sub><br>
 - ✅ [issue #524: warn: duplicate "useAppConfig" surfaced in Nuxt 4.4.2 / Nitro after unimport 6.1.0](https://github.com/unjs/unimport/issues/524) in [unjs/unimport](https://github.com/unjs/unimport) <sub>· Apr 22, 2026 · 5:53 AM Dubai</sub><br>
 - ✅ [issue #780: Support for PostgreSQL partitioned tables](https://github.com/jazzband/django-auditlog/issues/780) in [jazzband/django-auditlog](https://github.com/jazzband/django-auditlog) <sub>· Feb 27, 2026 · 11:02 AM Dubai</sub><br>
@@ -75,11 +75,11 @@ Public issues I've opened. Updated automatically.
 - ✅ [issue #152: Setting width/height degrades the quality of the PDF on 1080p screens](https://github.com/TaTo30/vue-pdf/issues/152) in [TaTo30/vue-pdf](https://github.com/TaTo30/vue-pdf) <sub>· Jun 29, 2025 · 9:49 AM Dubai</sub><br>
 - ✅ [issue #3931: sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute](https://github.com/pymupdf/PyMuPDF/issues/3931) in [pymupdf/PyMuPDF](https://github.com/pymupdf/PyMuPDF) <sub>· Oct 9, 2024 · 9:07 PM Dubai</sub><br>
 - ✅ [issue #142: Fails to load PDF when `pdfjs-dist` version `4.6.82` is installed](https://github.com/TaTo30/vue-pdf/issues/142) in [TaTo30/vue-pdf](https://github.com/TaTo30/vue-pdf) <sub>· Sep 5, 2024 · 6:59 AM Dubai</sub><br>
-- ✅ [issue #18018: Different window.open in an async call behaviour between Webpack 4 & Webpack 5](https://github.com/webpack/webpack/issues/18018) in [webpack/webpack](https://github.com/webpack/webpack) <sub>· Feb 14, 2024 · 8:07 PM Dubai</sub><br>
 
 <details>
-<summary>Show 5 more completed issues</summary>
+<summary>Show 6 more completed issues</summary>
 
+- ✅ [issue #18018: Different window.open in an async call behaviour between Webpack 4 & Webpack 5](https://github.com/webpack/webpack/issues/18018) in [webpack/webpack](https://github.com/webpack/webpack) <sub>· Feb 14, 2024 · 8:07 PM Dubai</sub><br>
 - ✅ [issue #1024: [BUG] TypeError: Object(...).getElementsByTagName is not a function](https://github.com/ReactTooltip/react-tooltip/issues/1024) in [ReactTooltip/react-tooltip](https://github.com/ReactTooltip/react-tooltip) <sub>· Jul 3, 2023 · 6:23 PM Dubai</sub><br>
 - ✅ [issue #5158: Convert stdlib dataclass to a pydantic BaseModel](https://github.com/pydantic/pydantic/issues/5158) in [pydantic/pydantic](https://github.com/pydantic/pydantic) <sub>· Mar 9, 2023 · 11:26 AM Dubai</sub><br>
 - ✅ [issue #324: Server side rendering (SSR) support](https://github.com/stripe/react-stripe-js/issues/324) in [stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) <sub>· Oct 3, 2022 · 5:36 PM Dubai</sub><br>
@@ -94,7 +94,8 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- 🍴 Forked [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) to [samiashi/sentry-javascript](https://github.com/samiashi/sentry-javascript) <sub>· Sep 30, 2026 · 10:49 AM Dubai</sub><br>
+- 💬 Commented on [issue #24858: Vue tracing mixin schedules a 2-second timer per component, even with `trackComponents: false`](https://github.com/getsentry/sentry-javascript/issues/24858#issuecomment-5907758492) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:56 PM Dubai</sub><br>
+- 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Sep 30, 2026 · 10:05 AM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
 - 🔎 Reviewed [PR #51: [COR-1422] Add per-request usage telemetry to a Redis stream](https://github.com/coral-li/llmproxy/pull/51) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Sep 23, 2026 · 6:07 PM Dubai</sub><br>
@@ -102,7 +103,6 @@ Public activity from the past three months, excluding pull requests and issues (
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/watchlist-cabinet](https://github.com/samiashi/watchlist-cabinet) <sub>· Sep 23, 2026 · 11:40 AM Dubai</sub><br>
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Sep 21, 2026 · 8:26 PM Dubai</sub><br>
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
 
 <details>
@@ -119,6 +119,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: September 30, 2026, 11:12 AM Dubai time
+Last updated: September 30, 2026, 10:00 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
