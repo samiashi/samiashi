@@ -10,6 +10,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Iterator
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -422,10 +423,7 @@ def collapsed_bucket(
     return lines
 
 
-def render_pull_requests(items: list[dict], public_repositories: set[str]) -> list[str]:
-    opened: list[tuple[datetime, str]] = []
-    merged: list[tuple[datetime, str]] = []
-    seen: set[str] = set()
+def displayed_items(items: list[dict], public_repositories: set[str]) -> Iterator[tuple[str, dict]]:
     for item in items:
         repository = item_repository(item)
         if not repository or repository == PROFILE_REPOSITORY:
@@ -434,6 +432,17 @@ def render_pull_requests(items: list[dict], public_repositories: set[str]) -> li
             continue
         if repository not in public_repositories:
             continue
+        yield repository, item
+
+
+def render_pull_requests(
+    items: list[dict], public_repositories: set[str]
+) -> tuple[list[str], set[tuple[str, int]]]:
+    opened: list[tuple[datetime, str]] = []
+    merged: list[tuple[datetime, str]] = []
+    listed: set[tuple[str, int]] = set()
+    seen: set[str] = set()
+    for repository, item in displayed_items(items, public_repositories):
         url = str(item.get("html_url") or "")
         if url:
             if url in seen:
@@ -443,6 +452,9 @@ def render_pull_requests(items: list[dict], public_repositories: set[str]) -> li
         if not rendered:
             continue
         status, moment, line = rendered
+        number = item.get("number")
+        if number is not None:
+            listed.add((repository, number))
         (opened if status == "open" else merged).append((moment, line))
 
     opened.sort(key=lambda entry: entry[0], reverse=True)
@@ -467,7 +479,7 @@ def render_pull_requests(items: list[dict], public_repositories: set[str]) -> li
                 capped_merged, "merged pull request", PULL_REQUEST_BROWSE_URL, overflow
             )
         )
-    return lines
+    return lines, listed
 
 
 def render_issue(item: dict) -> tuple[str, datetime, str] | None:
@@ -497,18 +509,14 @@ def render_issue(item: dict) -> tuple[str, datetime, str] | None:
     return status, moment, line
 
 
-def render_issues(items: list[dict], public_repositories: set[str]) -> list[str]:
+def render_issues(
+    items: list[dict], public_repositories: set[str]
+) -> tuple[list[str], set[tuple[str, int]]]:
     opened: list[tuple[datetime, str]] = []
     completed: list[tuple[datetime, str]] = []
+    listed: set[tuple[str, int]] = set()
     seen: set[str] = set()
-    for item in items:
-        repository = item_repository(item)
-        if not repository or repository == PROFILE_REPOSITORY:
-            continue
-        if repository in IGNORED_REPOSITORIES or repository.split("/", 1)[0] in IGNORED_OWNERS:
-            continue
-        if repository not in public_repositories:
-            continue
+    for repository, item in displayed_items(items, public_repositories):
         url = str(item.get("html_url") or "")
         if url:
             if url in seen:
@@ -518,6 +526,9 @@ def render_issues(items: list[dict], public_repositories: set[str]) -> list[str]
         if not rendered:
             continue
         status, moment, line = rendered
+        number = item.get("number")
+        if number is not None:
+            listed.add((repository, number))
         (opened if status == "open" else completed).append((moment, line))
 
     opened.sort(key=lambda entry: entry[0], reverse=True)
@@ -542,10 +553,14 @@ def render_issues(items: list[dict], public_repositories: set[str]) -> list[str]
                 capped_completed, "completed issue", ISSUE_BROWSE_URL, overflow
             )
         )
-    return lines
+    return lines, listed
 
 
-def render_activity(events: list[dict], original_repositories: set[str]) -> list[str]:
+def render_activity(
+    events: list[dict],
+    original_repositories: set[str],
+    listed: set[tuple[str, int]],
+) -> list[str]:
     rendered: list[tuple[dict, str, tuple]] = []
     seen: set[tuple] = set()
     pull_request_cache: dict[str, dict] = {}
@@ -566,7 +581,8 @@ def render_activity(events: list[dict], original_repositories: set[str]) -> list
     rendered = [
         (event, text, identity)
         for event, text, identity in rendered
-        if identity[0] != COMMENT_KIND or identity[1:3] not in reviewed
+        if identity[0] != COMMENT_KIND
+        or (identity[1:3] not in reviewed and identity[1:3] not in listed)
     ]
 
     lines: list[str] = []
@@ -643,14 +659,20 @@ def main() -> int:
         pull_requests = pull_requests_from_events(events)
     repositories = {item_repository(item) for item in pull_requests + issues} - {""}
     public_repositories = fetch_public_repositories(repositories)
-    pull_request_lines = render_pull_requests(pull_requests, public_repositories)
+    pull_request_lines, listed_pull_requests = render_pull_requests(
+        pull_requests, public_repositories
+    )
     if not pull_request_lines:
         pull_request_lines = ["- No public pull requests found.<br>"]
-    issue_lines = render_issues(issues, public_repositories)
+    issue_lines, listed_issues = render_issues(issues, public_repositories)
     if not issue_lines:
         issue_lines = ["- No public issues found.<br>"]
 
-    activity_lines = render_activity(events, fetch_original_repositories())
+    activity_lines = render_activity(
+        events,
+        fetch_original_repositories(),
+        listed_pull_requests | listed_issues,
+    )
     if not activity_lines:
         activity_lines = ["- No recent public activity found.<br>"]
 
