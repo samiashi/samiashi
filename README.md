@@ -109,13 +109,13 @@ Public activity from the past three months, excluding pull requests and issues (
 <summary>Show 2 more activity items</summary>
 
 - 🚀 Released [pytest-fahhh v0.1.2](https://github.com/samiashi/pytest-fahhh/releases/tag/v0.1.2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:37 PM Dubai</sub><br>
-- ⭐ Starred [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), [angelol/skills](https://github.com/angelol/skills), [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) and 1 more <sub>· Sep 1–3, 2026 Dubai</sub><br>
+- ⭐ Starred [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc), [angelol/skills](https://github.com/angelol/skills) <sub>· Sep 3, 2026 Dubai</sub><br>
 
 </details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 1, 2026, 10:26 PM Dubai time
+Last updated: October 2, 2026, 9:38 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
