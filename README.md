@@ -104,18 +104,10 @@ Public activity from the past three months, excluding pull requests and issues (
 - ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 5 more <sub>· Sep 14–21, 2026 Dubai</sub><br>
 - 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 - ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents), [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7–8, 2026 Dubai</sub><br>
-
-<details>
-<summary>Show 2 more activity items</summary>
-
-- 🚀 Released [pytest-fahhh v0.1.2](https://github.com/samiashi/pytest-fahhh/releases/tag/v0.1.2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:37 PM Dubai</sub><br>
-- ⭐ Starred [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) <sub>· Sep 3, 2026 · 3:07 PM Dubai</sub><br>
-
-</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 3, 2026, 8:18 PM Dubai time
+Last updated: October 4, 2026, 9:54 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
