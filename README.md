@@ -94,6 +94,7 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4, 2026 · 5:39 PM Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Sep 30, 2026 · 10:05 AM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
@@ -103,11 +104,17 @@ Public activity from the past three months, excluding pull requests and issues (
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
 - ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 5 more <sub>· Sep 14–21, 2026 Dubai</sub><br>
 - 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
+
+<details>
+<summary>Show 1 more activity item</summary>
+
 - ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents), [aipoch/open-science](https://github.com/aipoch/open-science) <sub>· Sep 7–8, 2026 Dubai</sub><br>
+
+</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 4, 2026, 9:54 AM Dubai time
+Last updated: October 4, 2026, 8:51 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
