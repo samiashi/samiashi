@@ -94,27 +94,27 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [thesysdev/openui](https://github.com/thesysdev/openui) <sub>· Oct 8, 2026 · 3:59 PM Dubai</sub><br>
+- 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
 - ⭐ Starred [get-convex/convex-backend](https://github.com/get-convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Sep 30, 2026 · 10:05 AM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
 - ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 5 more <sub>· Sep 14–21, 2026 Dubai</sub><br>
-- 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 
 <details>
 <summary>Show 1 more activity item</summary>
 
-- ⭐ Starred [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) <sub>· Sep 8, 2026 · 3:08 PM Dubai</sub><br>
+- 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 
 </details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 7, 2026, 10:57 PM Dubai time
+Last updated: October 8, 2026, 10:51 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
