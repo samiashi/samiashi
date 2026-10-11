@@ -94,7 +94,7 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- ⭐ Starred [thesysdev/openui](https://github.com/thesysdev/openui) <sub>· Oct 8, 2026 · 3:59 PM Dubai</sub><br>
+- ⭐ Starred [lyogavin/airllm](https://github.com/lyogavin/airllm), [thesysdev/openui](https://github.com/thesysdev/openui) <sub>· Oct 8–10, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
 - ⭐ Starred [get-convex/convex-backend](https://github.com/get-convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
@@ -115,6 +115,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 8, 2026, 10:51 PM Dubai time
+Last updated: October 11, 2026, 9:48 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
