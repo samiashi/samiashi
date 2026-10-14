@@ -103,7 +103,7 @@ Public activity from the past three months, excluding pull requests and issues (
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
-- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 5 more <sub>· Sep 14–21, 2026 Dubai</sub><br>
+- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 4 more <sub>· Sep 17–21, 2026 Dubai</sub><br>
 
 <details>
 <summary>Show 1 more activity item</summary>
@@ -115,6 +115,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 13, 2026, 10:48 AM Dubai time
+Last updated: October 14, 2026, 9:11 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
