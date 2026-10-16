@@ -96,7 +96,7 @@ Public activity from the past three months, excluding pull requests and issues (
 <!--RECENT_ACTIVITY:start-->
 - ⭐ Starred [andunieee/flipflop](https://github.com/andunieee/flipflop), [bigscience-workshop/petals](https://github.com/bigscience-workshop/petals), [shaongitbd/doory](https://github.com/shaongitbd/doory) and 2 more <sub>· Oct 8–15, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
-- ⭐ Starred [get-convex/convex-backend](https://github.com/get-convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
+- ⭐ Starred [convex/convex-backend](https://github.com/convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
@@ -115,6 +115,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 15, 2026, 9:02 PM Dubai time
+Last updated: October 16, 2026, 8:33 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
