@@ -94,6 +94,7 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Oct 16, 2026 · 6:59 PM Dubai</sub><br>
 - ⭐ Starred [andunieee/flipflop](https://github.com/andunieee/flipflop), [bigscience-workshop/petals](https://github.com/bigscience-workshop/petals), [shaongitbd/doory](https://github.com/shaongitbd/doory) and 2 more <sub>· Oct 8–15, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
 - ⭐ Starred [convex/convex-backend](https://github.com/convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
@@ -103,11 +104,11 @@ Public activity from the past three months, excluding pull requests and issues (
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
 - 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
-- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 4 more <sub>· Sep 17–21, 2026 Dubai</sub><br>
 
 <details>
-<summary>Show 1 more activity item</summary>
+<summary>Show 2 more activity items</summary>
 
+- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux), [coder/coder](https://github.com/coder/coder) and 4 more <sub>· Sep 17–21, 2026 Dubai</sub><br>
 - 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 
 </details>
@@ -115,6 +116,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 16, 2026, 8:33 AM Dubai time
+Last updated: October 17, 2026, 7:36 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
