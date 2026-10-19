@@ -108,7 +108,7 @@ Public activity from the past three months, excluding pull requests and issues (
 <details>
 <summary>Show 2 more activity items</summary>
 
-- ⭐ Starred [google/ax](https://github.com/google/ax), [raine/workmux](https://github.com/raine/workmux) <sub>· Sep 18–21, 2026 Dubai</sub><br>
+- ⭐ Starred [google/ax](https://github.com/google/ax) <sub>· Sep 21, 2026 · 10:35 AM Dubai</sub><br>
 - 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
 
 </details>
@@ -116,6 +116,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 18, 2026, 8:35 AM Dubai time
+Last updated: October 19, 2026, 8:42 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
