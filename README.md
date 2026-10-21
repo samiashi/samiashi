@@ -104,19 +104,10 @@ Public activity from the past three months, excluding pull requests and issues (
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
 - ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
-
-<details>
-<summary>Show 3 more activity items</summary>
-
-- 🌍 Made [samiashi/we-saw](https://github.com/samiashi/we-saw) public <sub>· Sep 21, 2026 · 12:34 PM Dubai</sub><br>
-- ⭐ Starred [google/ax](https://github.com/google/ax) <sub>· Sep 21, 2026 · 10:35 AM Dubai</sub><br>
-- 🌍 Made [samiashi/ashiboy](https://github.com/samiashi/ashiboy) public <sub>· Sep 11, 2026 · 2:37 PM Dubai</sub><br>
-
-</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 19, 2026, 10:43 PM Dubai time
+Last updated: October 21, 2026, 9:13 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
