@@ -3,17 +3,17 @@
 Public pull requests I've opened or merged. Updated automatically.
 
 <!--OPEN_SOURCE_PRS:start-->
-**Open (6)**
+**Open (4)**
 
-- 💪 [PR #10: Upgrade status-page runtimes and graph tooling](https://github.com/coral-li/coral-statuspage/pull/10) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 8:40 AM Dubai</sub><br>
-- 💪 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 21, 2026 · 11:20 PM Dubai</sub><br>
 - 💪 [PR #986: Display Git worktrees under their repository in the Git view](https://github.com/alefragnani/vscode-project-manager/pull/986) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 3:22 PM Dubai</sub><br>
 - 💪 [PR #1570: [azure][s3] Replace deprecated `datetime.utcnow()`](https://github.com/jschneier/django-storages/pull/1570) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 · 4:14 PM Dubai</sub><br>
 - 💪 [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
 - 💪 [PR #14: Update Python & Django supported versions + migrate to ruff](https://github.com/djk2/django-admin-shell/pull/14) in [djk2/django-admin-shell](https://github.com/djk2/django-admin-shell) <sub>· May 22, 2025 · 4:29 PM Dubai</sub><br>
 
-**Merged (32)**
+**Merged (34)**
 
+- 🎉 [PR #10: Upgrade status-page runtimes and graph tooling](https://github.com/coral-li/coral-statuspage/pull/10) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 12:07 PM Dubai</sub><br>
+- 🎉 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 11:48 AM Dubai</sub><br>
 - 🎉 [PR #985: Fix invalid JSON in Ukrainian localization file (package.nls.uk.json)](https://github.com/alefragnani/vscode-project-manager/pull/985) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 4:43 PM Dubai</sub><br>
 - 🎉 [PR #51: [COR-1422] Add per-request usage telemetry to a Redis stream](https://github.com/coral-li/llmproxy/pull/51) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Sep 23, 2026 · 6:10 PM Dubai</sub><br>
 - 🎉 [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 11:09 AM Dubai</sub><br>
@@ -22,12 +22,12 @@ Public pull requests I've opened or merged. Updated automatically.
 - 🎉 [PR #1: Change logo image source in README](https://github.com/coral-li/.github/pull/1) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Jun 26, 2026 · 11:40 AM Dubai</sub><br>
 - 🎉 [PR #35037: fix(vite): use spa entry for vite-node fallback](https://github.com/nuxt/nuxt/pull/35037) in [nuxt/nuxt](https://github.com/nuxt/nuxt) <sub>· May 11, 2026 · 5:50 PM Dubai</sub><br>
 - 🎉 [PR #4: cleanup README](https://github.com/samiashi/pytest-fahhh/pull/4) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 4:16 PM Dubai</sub><br>
-- 🎉 [PR #3: Improve release workflow for backfills and generated notes](https://github.com/samiashi/pytest-fahhh/pull/3) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 1:07 PM Dubai</sub><br>
-- 🎉 [PR #2: Samielachi/release 0.1.1](https://github.com/samiashi/pytest-fahhh/pull/2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 12:54 PM Dubai</sub><br>
 
 <details>
-<summary>Show 22 more merged pull requests</summary>
+<summary>Show 24 more merged pull requests</summary>
 
+- 🎉 [PR #3: Improve release workflow for backfills and generated notes](https://github.com/samiashi/pytest-fahhh/pull/3) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 1:07 PM Dubai</sub><br>
+- 🎉 [PR #2: Samielachi/release 0.1.1](https://github.com/samiashi/pytest-fahhh/pull/2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 12:54 PM Dubai</sub><br>
 - 🎉 [PR #1: repo setup](https://github.com/samiashi/pytest-fahhh/pull/1) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 12:46 PM Dubai</sub><br>
 - 🎉 [PR #542: Add UAE (United Arab Emirates) localflavor support](https://github.com/django/django-localflavor/pull/542) in [django/django-localflavor](https://github.com/django/django-localflavor) <sub>· Mar 11, 2026 · 1:45 PM Dubai</sub><br>
 - 🎉 [PR #113: Fix admin import without django-stubs runtime monkeypatch](https://github.com/django-commons/django-fsm-2/pull/113) in [django-commons/django-fsm-2](https://github.com/django-commons/django-fsm-2) <sub>· Mar 9, 2026 · 11:54 AM Dubai</sub><br>
@@ -70,7 +70,7 @@ Public issues I've opened. Updated automatically.
 - ✅ [issue #24858: Vue tracing mixin schedules a 2-second timer per component, even with `trackComponents: false`](https://github.com/getsentry/sentry-javascript/issues/24858) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 2:09 PM Dubai</sub><br>
 - ✅ [issue #34957: Nuxt 4.4.4 dev server fails for ssr:false app: Vite Node IPC socket path not configured](https://github.com/nuxt/nuxt/issues/34957) in [nuxt/nuxt](https://github.com/nuxt/nuxt) <sub>· Jun 14, 2026 · 5:56 AM Dubai</sub><br>
 - ✅ [issue #524: warn: duplicate "useAppConfig" surfaced in Nuxt 4.4.2 / Nitro after unimport 6.1.0](https://github.com/unjs/unimport/issues/524) in [unjs/unimport](https://github.com/unjs/unimport) <sub>· Apr 22, 2026 · 5:53 AM Dubai</sub><br>
-- ✅ [issue #780: Support for PostgreSQL partitioned tables](https://github.com/jazzband/django-auditlog/issues/780) in [jazzband/django-auditlog](https://github.com/jazzband/django-auditlog) <sub>· Feb 27, 2026 · 11:02 AM Dubai</sub><br>
+- ✅ [issue #780: Support for PostgreSQL partitioned tables](https://github.com/django-commons/django-auditlog/issues/780) in [django-commons/django-auditlog](https://github.com/django-commons/django-auditlog) <sub>· Feb 27, 2026 · 11:02 AM Dubai</sub><br>
 - ✅ [issue #5429: `openai_agents` integration crashes with openai-agents==0.8.0 (AgentRunner has no _get_all_tools)](https://github.com/getsentry/sentry-python/issues/5429) in [getsentry/sentry-python](https://github.com/getsentry/sentry-python) <sub>· Feb 16, 2026 · 3:31 PM Dubai</sub><br>
 - ✅ [issue #627: ESLint doesn't detect undefined auto-imported components](https://github.com/nuxt/eslint/issues/627) in [nuxt/eslint](https://github.com/nuxt/eslint) <sub>· Nov 7, 2025 · 1:44 PM Dubai</sub><br>
 - ✅ [issue #5739: vue-tsc doesn't detect undefined auto-imported components](https://github.com/vuejs/language-tools/issues/5739) in [vuejs/language-tools](https://github.com/vuejs/language-tools) <sub>· Nov 7, 2025 · 1:44 PM Dubai</sub><br>
@@ -96,20 +96,32 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- ⭐ Starred [morluto/rea](https://github.com/morluto/rea) <sub>· Oct 19, 2026 · 1:06 PM Dubai</sub><br>
+- 🔎 Approved [PR #1: Pin GitHub Actions to immutable commits](https://github.com/coral-li/dspy/pull/1) in [coral-li/dspy](https://github.com/coral-li/dspy) <sub>· Oct 22, 2026 · 7:59 PM Dubai</sub><br>
+- 🔎 Approved [PR #3: ci: pin GitHub Actions to commit SHAs](https://github.com/coral-li/agno/pull/3) in [coral-li/agno](https://github.com/coral-li/agno) <sub>· Oct 22, 2026 · 7:58 PM Dubai</sub><br>
+- 🔎 Approved [PR #1: Pin GitHub Actions to immutable commit SHAs](https://github.com/coral-li/litellm/pull/1) in [coral-li/litellm](https://github.com/coral-li/litellm) <sub>· Oct 22, 2026 · 7:02 PM Dubai</sub><br>
+- 🔎 Approved [PR #2: Pin GitHub Actions to immutable commit SHAs](https://github.com/coral-li/pydantic-ai/pull/2) in [coral-li/pydantic-ai](https://github.com/coral-li/pydantic-ai) <sub>· Oct 22, 2026 · 7:01 PM Dubai</sub><br>
+- 🔎 Approved [PR #7: Pin GitHub Actions to immutable commits](https://github.com/coral-li/django-fsm-2-admin/pull/7) in [coral-li/django-fsm-2-admin](https://github.com/coral-li/django-fsm-2-admin) <sub>· Oct 22, 2026 · 2:18 PM Dubai</sub><br>
+- 🔎 Approved [PR #54: ci: pin GitHub Actions to commit SHAs](https://github.com/coral-li/llmproxy/pull/54) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 2:16 PM Dubai</sub><br>
+- 🔎 Approved [PR #12: Pin workflow Actions to immutable revisions](https://github.com/coral-li/coral-statuspage/pull/12) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 2:14 PM Dubai</sub><br>
+- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea) <sub>· Oct 19–22, 2026 Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Oct 16, 2026 · 6:59 PM Dubai</sub><br>
 - ⭐ Starred [andunieee/flipflop](https://github.com/andunieee/flipflop), [bigscience-workshop/petals](https://github.com/bigscience-workshop/petals), [shaongitbd/doory](https://github.com/shaongitbd/doory) and 2 more <sub>· Oct 8–15, 2026 Dubai</sub><br>
+
+<details>
+<summary>Show 6 more activity items</summary>
+
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
 - ⭐ Starred [convex/convex-backend](https://github.com/convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
-- ⭐ Starred [oxc-project/oxc](https://github.com/oxc-project/oxc) <sub>· Sep 22, 2026 · 11:00 AM Dubai</sub><br>
+
+</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 22, 2026, 8:48 AM Dubai time
+Last updated: October 22, 2026, 9:11 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
