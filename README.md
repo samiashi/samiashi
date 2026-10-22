@@ -3,8 +3,10 @@
 Public pull requests I've opened or merged. Updated automatically.
 
 <!--OPEN_SOURCE_PRS:start-->
-**Open (4)**
+**Open (6)**
 
+- 💪 [PR #10: Upgrade status-page runtimes and graph tooling](https://github.com/coral-li/coral-statuspage/pull/10) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 8:40 AM Dubai</sub><br>
+- 💪 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 21, 2026 · 11:20 PM Dubai</sub><br>
 - 💪 [PR #986: Display Git worktrees under their repository in the Git view](https://github.com/alefragnani/vscode-project-manager/pull/986) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 3:22 PM Dubai</sub><br>
 - 💪 [PR #1570: [azure][s3] Replace deprecated `datetime.utcnow()`](https://github.com/jschneier/django-storages/pull/1570) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 · 4:14 PM Dubai</sub><br>
 - 💪 [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
@@ -108,6 +110,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 21, 2026, 9:13 PM Dubai time
+Last updated: October 22, 2026, 8:48 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
