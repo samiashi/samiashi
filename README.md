@@ -96,32 +96,17 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- 🔎 Approved [PR #1: Pin GitHub Actions to immutable commits](https://github.com/coral-li/dspy/pull/1) in [coral-li/dspy](https://github.com/coral-li/dspy) <sub>· Oct 22, 2026 · 7:59 PM Dubai</sub><br>
-- 🔎 Approved [PR #3: ci: pin GitHub Actions to commit SHAs](https://github.com/coral-li/agno/pull/3) in [coral-li/agno](https://github.com/coral-li/agno) <sub>· Oct 22, 2026 · 7:58 PM Dubai</sub><br>
-- 🔎 Approved [PR #1: Pin GitHub Actions to immutable commit SHAs](https://github.com/coral-li/litellm/pull/1) in [coral-li/litellm](https://github.com/coral-li/litellm) <sub>· Oct 22, 2026 · 7:02 PM Dubai</sub><br>
-- 🔎 Approved [PR #2: Pin GitHub Actions to immutable commit SHAs](https://github.com/coral-li/pydantic-ai/pull/2) in [coral-li/pydantic-ai](https://github.com/coral-li/pydantic-ai) <sub>· Oct 22, 2026 · 7:01 PM Dubai</sub><br>
-- 🔎 Approved [PR #7: Pin GitHub Actions to immutable commits](https://github.com/coral-li/django-fsm-2-admin/pull/7) in [coral-li/django-fsm-2-admin](https://github.com/coral-li/django-fsm-2-admin) <sub>· Oct 22, 2026 · 2:18 PM Dubai</sub><br>
-- 🔎 Approved [PR #54: ci: pin GitHub Actions to commit SHAs](https://github.com/coral-li/llmproxy/pull/54) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 2:16 PM Dubai</sub><br>
-- 🔎 Approved [PR #12: Pin workflow Actions to immutable revisions](https://github.com/coral-li/coral-statuspage/pull/12) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 2:14 PM Dubai</sub><br>
-- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea) <sub>· Oct 19–22, 2026 Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Oct 16, 2026 · 6:59 PM Dubai</sub><br>
-- ⭐ Starred [andunieee/flipflop](https://github.com/andunieee/flipflop), [bigscience-workshop/petals](https://github.com/bigscience-workshop/petals), [shaongitbd/doory](https://github.com/shaongitbd/doory) and 2 more <sub>· Oct 8–15, 2026 Dubai</sub><br>
-
-<details>
-<summary>Show 6 more activity items</summary>
-
+- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) and 4 more <sub>· Oct 8–22, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
 - ⭐ Starred [convex/convex-backend](https://github.com/convex/convex-backend), [neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster) <sub>· Oct 4–7, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #24864: fix(vue): Debounce the root render span with one timer per app](https://github.com/getsentry/sentry-javascript/pull/24864#issuecomment-5907587479) in [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) <sub>· Sep 30, 2026 · 12:46 PM Dubai</sub><br>
 - 🍴 Forked [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) to [samiashi/vscode-project-manager](https://github.com/samiashi/vscode-project-manager) <sub>· Sep 24, 2026 · 2:39 PM Dubai</sub><br>
 - ⭐ Starred [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI), [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Sep 23, 2026 Dubai</sub><br>
 - 🍴 Forked [jschneier/django-storages](https://github.com/jschneier/django-storages) to [samiashi/django-storages](https://github.com/samiashi/django-storages) <sub>· Sep 23, 2026 · 3:53 PM Dubai</sub><br>
-
-</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 22, 2026, 9:11 PM Dubai time
+Last updated: October 23, 2026, 8:51 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
