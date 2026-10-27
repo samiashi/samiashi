@@ -96,6 +96,8 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27, 2026 · 4:11 PM Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Oct 27, 2026 · 1:12 PM Dubai</sub><br>
 - 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
 - ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) and 4 more <sub>· Oct 8–22, 2026 Dubai</sub><br>
 - 💬 Commented on [PR #4102: django: handle cancelled requests more cleanly](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/4102#issuecomment-6056202756) in [open-telemetry/opentelemetry-python-contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) <sub>· Oct 8, 2026 · 12:47 PM Dubai</sub><br>
@@ -105,6 +107,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 26, 2026, 10:41 PM Dubai time
+Last updated: October 27, 2026, 10:01 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
