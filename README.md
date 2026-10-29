@@ -59,8 +59,9 @@ Public pull requests I've opened or merged. Updated automatically.
 Public issues I've opened. Updated automatically.
 
 <!--OPEN_SOURCE_ISSUES:start-->
-**Open (3)**
+**Open (4)**
 
+- 💪 [issue #105909: [BUG] Desktop 4.29.0: ccd_pr set_monitor refuses Auto-fix for PRs the session opened with gh pr create, even in its own app-made worktree](https://github.com/anthropics/claude-code/issues/105909) in [anthropics/claude-code](https://github.com/anthropics/claude-code) <sub>· Oct 29, 2026 · 2:27 PM Dubai</sub><br>
 - 💪 [issue #319: Pymakr triggers runaway rg searches (100% CPU) on large Python workspace](https://github.com/pycom/pymakr-vsc/issues/319) in [pycom/pymakr-vsc](https://github.com/pycom/pymakr-vsc) <sub>· Feb 5, 2026 · 11:57 AM Dubai</sub><br>
 - 💪 [issue #219: BUG: Bubble chart data labels not rendering in SVG export with download_chart()](https://github.com/highcharts-for-python/highcharts-core/issues/219) in [highcharts-for-python/highcharts-core](https://github.com/highcharts-for-python/highcharts-core) <sub>· Jun 18, 2025 · 5:24 PM Dubai</sub><br>
 - 💪 [issue #53: Unable to extract currency from excel formatted cells](https://github.com/microsoft/markitdown/issues/53) in [microsoft/markitdown](https://github.com/microsoft/markitdown) <sub>· Dec 16, 2024 · 12:08 PM Dubai</sub><br>
@@ -107,6 +108,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: October 28, 2026, 9:43 AM Dubai time
+Last updated: October 29, 2026, 10:29 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
