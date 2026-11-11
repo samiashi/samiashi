@@ -10,8 +10,11 @@ Public pull requests I've opened or merged. Updated automatically.
 - 💪 [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
 - 💪 [PR #14: Update Python & Django supported versions + migrate to ruff](https://github.com/djk2/django-admin-shell/pull/14) in [djk2/django-admin-shell](https://github.com/djk2/django-admin-shell) <sub>· May 22, 2025 · 4:29 PM Dubai</sub><br>
 
-**Merged (34)**
+**Merged (37)**
 
+- 🎉 [PR #3: Drop Python 3.9 and 3.10, and list contributors in releases (deep-review 1.2.2)](https://github.com/samiashi/agent-plugins/pull/3) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 12:46 PM Dubai</sub><br>
+- 🎉 [PR #2: Stop comment-only follow-ups from looping and recognise marker-only reviews (deep-review 1.2.1)](https://github.com/samiashi/agent-plugins/pull/2) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 12:11 PM Dubai</sub><br>
+- 🎉 [PR #1: Add AGENTS.md and move every dependency to its latest major behind a 6-day cooldown](https://github.com/samiashi/agent-plugins/pull/1) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 11:00 AM Dubai</sub><br>
 - 🎉 [PR #10: Upgrade status-page runtimes and graph tooling](https://github.com/coral-li/coral-statuspage/pull/10) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 12:07 PM Dubai</sub><br>
 - 🎉 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 11:48 AM Dubai</sub><br>
 - 🎉 [PR #985: Fix invalid JSON in Ukrainian localization file (package.nls.uk.json)](https://github.com/alefragnani/vscode-project-manager/pull/985) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 4:43 PM Dubai</sub><br>
@@ -19,13 +22,13 @@ Public pull requests I've opened or merged. Updated automatically.
 - 🎉 [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 11:09 AM Dubai</sub><br>
 - 🎉 [PR #5: Release v0.1.2](https://github.com/samiashi/pytest-fahhh/pull/5) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Sep 3, 2026 · 3:39 PM Dubai</sub><br>
 - 🎉 [PR #3186: feat: add AED to the preferred currency picker](https://github.com/steipete/CodexBar/pull/3186) in [steipete/CodexBar](https://github.com/steipete/CodexBar) <sub>· Aug 25, 2026 · 3:02 PM Dubai</sub><br>
+
+<details>
+<summary>Show 27 more merged pull requests</summary>
+
 - 🎉 [PR #1: Change logo image source in README](https://github.com/coral-li/.github/pull/1) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Jun 26, 2026 · 11:40 AM Dubai</sub><br>
 - 🎉 [PR #35037: fix(vite): use spa entry for vite-node fallback](https://github.com/nuxt/nuxt/pull/35037) in [nuxt/nuxt](https://github.com/nuxt/nuxt) <sub>· May 11, 2026 · 5:50 PM Dubai</sub><br>
 - 🎉 [PR #4: cleanup README](https://github.com/samiashi/pytest-fahhh/pull/4) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 4:16 PM Dubai</sub><br>
-
-<details>
-<summary>Show 24 more merged pull requests</summary>
-
 - 🎉 [PR #3: Improve release workflow for backfills and generated notes](https://github.com/samiashi/pytest-fahhh/pull/3) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 1:07 PM Dubai</sub><br>
 - 🎉 [PR #2: Samielachi/release 0.1.1](https://github.com/samiashi/pytest-fahhh/pull/2) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 12:54 PM Dubai</sub><br>
 - 🎉 [PR #1: repo setup](https://github.com/samiashi/pytest-fahhh/pull/1) in [samiashi/pytest-fahhh](https://github.com/samiashi/pytest-fahhh) <sub>· Apr 16, 2026 · 12:46 PM Dubai</sub><br>
@@ -98,17 +101,16 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <!--RECENT_ACTIVITY:start-->
 - ⭐ Starred [shadcn/improve](https://github.com/shadcn/improve) <sub>· Nov 10, 2026 · 10:09 PM Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 10, 2026 · 9:34 PM Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
-- ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft) <sub>· Nov 1–2, 2026 Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Oct 30, 2026 · 6:32 PM Dubai</sub><br>
-- ⭐ Starred [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27, 2026 · 4:11 PM Dubai</sub><br>
+- ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft), [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27 – Nov 2, 2026 Dubai</sub><br>
 - 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
-- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) and 2 more <sub>· Oct 12–22, 2026 Dubai</sub><br>
+- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) and 1 more <sub>· Oct 13–22, 2026 Dubai</sub><br>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 11, 2026, 10:22 AM Dubai time
+Last updated: November 11, 2026, 11:37 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
