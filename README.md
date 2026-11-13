@@ -104,28 +104,19 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- 🔎 Approved [PR #14: ⬆️ Bump @upptime/graphs from 1.2.33 to 1.2.34](https://github.com/coral-li/coral-statuspage/pull/14) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Nov 12, 2026 · 12:30 PM Dubai</sub><br>
-- 🔎 Approved [PR #13: ⬆️ Bump upptime/uptime-monitor from 1.46.3 to 1.46.5](https://github.com/coral-li/coral-statuspage/pull/13) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Nov 12, 2026 · 12:30 PM Dubai</sub><br>
 - ⭐ Starred [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock) <sub>· Nov 12, 2026 Dubai</sub><br>
-- 🔎 Approved [PR #4: build(deps-dev): bump ruff from 0.17.3 to 0.17.4 in the dev-tools group](https://github.com/samiashi/agent-plugins/pull/4) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 12, 2026 · 11:29 AM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 12:46 PM Dubai</sub><br>
 - ⭐ Starred [shadcn/improve](https://github.com/shadcn/improve) <sub>· Nov 10, 2026 · 10:09 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 10, 2026 · 9:34 PM Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
 - ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft), [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27 – Nov 2, 2026 Dubai</sub><br>
-
-<details>
-<summary>Show 2 more activity items</summary>
-
 - 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
 - ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) <sub>· Oct 15–22, 2026 Dubai</sub><br>
-
-</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 12, 2026, 11:55 PM Dubai time
+Last updated: November 13, 2026, 10:46 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
