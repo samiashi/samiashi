@@ -104,9 +104,8 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- ⭐ Starred [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock) <sub>· Nov 12, 2026 Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 12:46 PM Dubai</sub><br>
-- ⭐ Starred [shadcn/improve](https://github.com/shadcn/improve) <sub>· Nov 10, 2026 · 10:09 PM Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 12, 2026 · 4:57 PM Dubai</sub><br>
+- ⭐ Starred [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock), [shadcn/improve](https://github.com/shadcn/improve) <sub>· Nov 10–12, 2026 Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 10, 2026 · 9:34 PM Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
@@ -117,6 +116,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 13, 2026, 10:46 AM Dubai time
+Last updated: November 14, 2026, 10:24 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
