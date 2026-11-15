@@ -111,11 +111,11 @@ Public activity from the past three months, excluding pull requests and issues (
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
 - ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft), [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27 – Nov 2, 2026 Dubai</sub><br>
 - 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
-- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea), [andunieee/flipflop](https://github.com/andunieee/flipflop) <sub>· Oct 15–22, 2026 Dubai</sub><br>
+- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes), [morluto/rea](https://github.com/morluto/rea) <sub>· Oct 19–22, 2026 Dubai</sub><br>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 14, 2026, 10:24 AM Dubai time
+Last updated: November 15, 2026, 10:33 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
