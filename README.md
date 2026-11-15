@@ -104,6 +104,7 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) <sub>· Nov 15, 2026 · 5:22 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 12, 2026 · 4:57 PM Dubai</sub><br>
 - ⭐ Starred [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock), [shadcn/improve](https://github.com/shadcn/improve) <sub>· Nov 10–12, 2026 Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 10, 2026 · 9:34 PM Dubai</sub><br>
@@ -116,6 +117,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 15, 2026, 10:33 AM Dubai time
+Last updated: November 15, 2026, 10:52 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
