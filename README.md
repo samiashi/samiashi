@@ -105,6 +105,7 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) <sub>· Nov 21, 2026 · 12:02 PM Dubai</sub><br>
 - 💬 Commented on [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6#issuecomment-7002430940) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 19, 2026 · 11:13 AM Dubai</sub><br>
 - ⭐ Starred [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18, 2026 · 12:01 PM Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:31 AM Dubai</sub><br>
@@ -114,18 +115,17 @@ Public activity from the past three months, excluding pull requests and issues (
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
 - ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft), [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27 – Nov 2, 2026 Dubai</sub><br>
-- 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
 
 <details>
 <summary>Show 1 more activity item</summary>
 
-- ⭐ Starred [dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes) <sub>· Oct 22, 2026 · 12:06 PM Dubai</sub><br>
+- 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
 
 </details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 20, 2026, 12:38 AM Dubai time
+Last updated: November 21, 2026, 11:16 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
