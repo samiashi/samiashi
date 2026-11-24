@@ -105,11 +105,11 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
-- ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) <sub>· Nov 21, 2026 · 12:02 PM Dubai</sub><br>
-- 💬 Commented on [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6#issuecomment-7002430940) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 19, 2026 · 11:13 AM Dubai</sub><br>
-- ⭐ Starred [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18, 2026 · 12:01 PM Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:31 AM Dubai</sub><br>
-- ⬆️ Pushed 4 commits to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 18, 2026 · 12:25 AM Dubai</sub><br>
+- ⭐ Starred [trycompai/crm](https://github.com/trycompai/crm) <sub>· Nov 24, 2026 · 9:22 AM Dubai</sub><br>
+- 🔎 Approved [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:06 AM Dubai</sub><br>
+- ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view), [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18–21, 2026 Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:15 AM Dubai</sub><br>
+- ⬆️ Pushed 3 commits to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 18, 2026 · 12:18 AM Dubai</sub><br>
 - 💬 Commented on [PR #57: fix: resolve Dependabot alerts for filelock, virtualenv and black](https://github.com/coral-li/llmproxy/pull/57#issuecomment-6948723823) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Nov 17, 2026 · 4:59 PM Dubai</sub><br>
 - ⭐ Starred [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src), [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock) and 1 more <sub>· Nov 10–15, 2026 Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
@@ -126,6 +126,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 21, 2026, 11:16 PM Dubai time
+Last updated: November 24, 2026, 1:55 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
