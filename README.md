@@ -10,8 +10,9 @@ Public pull requests I've opened or merged. Updated automatically.
 - 💪 [PR #2: feat: add React 19 support and modernize build tooling](https://github.com/lyst/hypernova-react/pull/2) in [lyst/hypernova-react](https://github.com/lyst/hypernova-react) <sub>· Aug 25, 2026 · 2:35 PM Dubai</sub><br>
 - 💪 [PR #14: Update Python & Django supported versions + migrate to ruff](https://github.com/djk2/django-admin-shell/pull/14) in [djk2/django-admin-shell](https://github.com/djk2/django-admin-shell) <sub>· May 22, 2025 · 4:29 PM Dubai</sub><br>
 
-**Merged (42)**
+**Merged (43)**
 
+- 🎉 [PR #8: Track unresolved evidence across deep-review rounds](https://github.com/samiashi/agent-plugins/pull/8) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 2:05 PM Dubai</sub><br>
 - 🎉 [PR #1: Update dependencies, fix Go linting, and lock GitHub Actions](https://github.com/samiashi/llm-tracker/pull/1) in [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 18, 2026 · 12:25 AM Dubai</sub><br>
 - 🎉 [PR #5: Approve without waiting for CI on protected branches, and ask the intent questions that hold approval (deep-review 1.2.3)](https://github.com/samiashi/agent-plugins/pull/5) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 12, 2026 · 4:57 PM Dubai</sub><br>
 - 🎉 [PR #16: [COR-2911] Lock GitHub Actions with a workflow lockfile and audit workflows with zizmor](https://github.com/coral-li/coral-statuspage/pull/16) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Nov 12, 2026 · 1:29 PM Dubai</sub><br>
@@ -21,11 +22,11 @@ Public pull requests I've opened or merged. Updated automatically.
 - 🎉 [PR #2: Stop comment-only follow-ups from looping and recognise marker-only reviews (deep-review 1.2.1)](https://github.com/samiashi/agent-plugins/pull/2) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 12:11 PM Dubai</sub><br>
 - 🎉 [PR #1: Add AGENTS.md and move every dependency to its latest major behind a 6-day cooldown](https://github.com/samiashi/agent-plugins/pull/1) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 11, 2026 · 11:00 AM Dubai</sub><br>
 - 🎉 [PR #10: Upgrade status-page runtimes and graph tooling](https://github.com/coral-li/coral-statuspage/pull/10) in [coral-li/coral-statuspage](https://github.com/coral-li/coral-statuspage) <sub>· Oct 22, 2026 · 12:07 PM Dubai</sub><br>
-- 🎉 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 11:48 AM Dubai</sub><br>
 
 <details>
-<summary>Show 32 more merged pull requests</summary>
+<summary>Show 33 more merged pull requests</summary>
 
+- 🎉 [PR #53: fix: resolve Dependabot alerts and update CI tooling](https://github.com/coral-li/llmproxy/pull/53) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Oct 22, 2026 · 11:48 AM Dubai</sub><br>
 - 🎉 [PR #985: Fix invalid JSON in Ukrainian localization file (package.nls.uk.json)](https://github.com/alefragnani/vscode-project-manager/pull/985) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Sep 24, 2026 · 4:43 PM Dubai</sub><br>
 - 🎉 [PR #51: [COR-1422] Add per-request usage telemetry to a Redis stream](https://github.com/coral-li/llmproxy/pull/51) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Sep 23, 2026 · 6:10 PM Dubai</sub><br>
 - 🎉 [PR #2: Refresh Coral organization profile and branding](https://github.com/coral-li/.github/pull/2) in [coral-li/.github](https://github.com/coral-li/.github) <sub>· Sep 7, 2026 · 11:09 AM Dubai</sub><br>
@@ -106,10 +107,10 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <!--RECENT_ACTIVITY:start-->
 - ⭐ Starred [trycompai/crm](https://github.com/trycompai/crm) <sub>· Nov 24, 2026 · 9:22 AM Dubai</sub><br>
+- ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:07 AM Dubai</sub><br>
 - 🔎 Approved [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:06 AM Dubai</sub><br>
 - ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view), [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18–21, 2026 Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:15 AM Dubai</sub><br>
-- ⬆️ Pushed 3 commits to [samiashi/llm-tracker](https://github.com/samiashi/llm-tracker) <sub>· Nov 18, 2026 · 12:18 AM Dubai</sub><br>
 - 💬 Commented on [PR #57: fix: resolve Dependabot alerts for filelock, virtualenv and black](https://github.com/coral-li/llmproxy/pull/57#issuecomment-6948723823) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Nov 17, 2026 · 4:59 PM Dubai</sub><br>
 - ⭐ Starred [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src), [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock) and 1 more <sub>· Nov 10–15, 2026 Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
@@ -126,6 +127,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 24, 2026, 1:55 PM Dubai time
+Last updated: November 25, 2026, 2:27 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
