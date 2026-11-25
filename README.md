@@ -106,8 +106,8 @@ Public issues I've opened. Updated automatically.
 Public activity from the past three months, excluding pull requests and issues (both listed above), updated automatically.
 
 <!--RECENT_ACTIVITY:start-->
+- ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 2:05 PM Dubai</sub><br>
 - ⭐ Starred [trycompai/crm](https://github.com/trycompai/crm) <sub>· Nov 24, 2026 · 9:22 AM Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:07 AM Dubai</sub><br>
 - 🔎 Approved [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:06 AM Dubai</sub><br>
 - ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view), [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18–21, 2026 Dubai</sub><br>
 - ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:15 AM Dubai</sub><br>
@@ -127,6 +127,6 @@ Public activity from the past three months, excluding pull requests and issues (
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 25, 2026, 2:27 AM Dubai time
+Last updated: November 25, 2026, 12:36 PM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
