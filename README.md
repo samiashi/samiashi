@@ -110,23 +110,15 @@ Public activity from the past three months, excluding pull requests and issues (
 - ⭐ Starred [trycompai/crm](https://github.com/trycompai/crm) <sub>· Nov 24, 2026 · 9:22 AM Dubai</sub><br>
 - 🔎 Approved [PR #6: build(deps-dev): bump @anthropic-ai/claude-code from 2.1.318 to 2.1.323 in the claude-code group](https://github.com/samiashi/agent-plugins/pull/6) in [samiashi/agent-plugins](https://github.com/samiashi/agent-plugins) <sub>· Nov 24, 2026 · 9:06 AM Dubai</sub><br>
 - ⭐ Starred [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view), [stablyai/orca](https://github.com/stablyai/orca) <sub>· Nov 18–21, 2026 Dubai</sub><br>
-- ⬆️ Pushed 1 commit to [samiashi/we-saw](https://github.com/samiashi/we-saw) <sub>· Nov 18, 2026 · 10:15 AM Dubai</sub><br>
 - 💬 Commented on [PR #57: fix: resolve Dependabot alerts for filelock, virtualenv and black](https://github.com/coral-li/llmproxy/pull/57#issuecomment-6948723823) in [coral-li/llmproxy](https://github.com/coral-li/llmproxy) <sub>· Nov 17, 2026 · 4:59 PM Dubai</sub><br>
 - ⭐ Starred [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src), [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor), [github/gh-actions-lock](https://github.com/github/gh-actions-lock) and 1 more <sub>· Nov 10–15, 2026 Dubai</sub><br>
 - 💬 Commented on [issue #1530: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)](https://github.com/jschneier/django-storages/issues/1530#issuecomment-6773297627) in [jschneier/django-storages](https://github.com/jschneier/django-storages) <sub>· Nov 10, 2026 · 8:44 PM Dubai</sub><br>
 - 💬 Commented on [issue #743: [FEATURE] - Automatic detection of worktrees in the repository](https://github.com/alefragnani/vscode-project-manager/issues/743#issuecomment-6773230858) in [alefragnani/vscode-project-manager](https://github.com/alefragnani/vscode-project-manager) <sub>· Nov 10, 2026 · 8:41 PM Dubai</sub><br>
 - ⭐ Starred [storytold/craft-anything](https://github.com/storytold/craft-anything), [storytold/wordcraft](https://github.com/storytold/wordcraft), [gorlev/stremio-altstore](https://github.com/gorlev/stremio-altstore) <sub>· Oct 27 – Nov 2, 2026 Dubai</sub><br>
-
-<details>
-<summary>Show 1 more activity item</summary>
-
-- 💬 Commented on [issue #49697: Computer Use helper interferes with physical keyboard input in Chrome on macOS, causing duplicated letters](https://github.com/openai/codex/issues/49697#issuecomment-6409546200) in [openai/codex](https://github.com/openai/codex) <sub>· Oct 26, 2026 · 10:15 AM Dubai</sub><br>
-
-</details>
 <!--RECENT_ACTIVITY:end-->
 
 <sub>
 <!--RECENT_ACTIVITY:last_update-->
-Last updated: November 25, 2026, 12:36 PM Dubai time
+Last updated: November 26, 2026, 1:42 AM Dubai time
 <!--RECENT_ACTIVITY:last_update_end-->
 </sub>
